@@ -18,3 +18,8 @@ while i >= 0:
 
 section('list comprehension')
 [print(planet) for planet in planets]
+
+section('filter')
+searchLetter = "e"
+filteredPlanets = [planet for planet in planets if searchLetter in planet.lower()]
+print(f'Planets that have "{searchLetter}" in their name: {filteredPlanets}')
