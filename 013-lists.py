@@ -38,3 +38,41 @@ ages = [34,35,36,38,39]
 print(ages)
 ages.insert(3, 37)
 print(ages)
+
+section('add item to end - like push')
+print(ages)
+ages.append(40)
+print(ages)
+
+section('add multiple items')
+# ages.append([41,42,43]) # will add a list 
+print(ages)
+ages.extend([41,42,43])
+print(ages)
+ages.extend((44,55)) # you can also add a tuple
+print(ages)
+
+section('remove')
+print(ages)
+ages.remove(35) # only removes the first instance
+print(ages)
+
+section('remove item based on index')
+print(ages)
+ages.pop(1)
+print(ages)
+
+section('remove last item')
+print(ages)
+ages.pop()
+print(ages)
+
+section('add item to beginning')
+print(ages)
+ages.insert(0, 33)
+print(ages)
+
+section('erase all contents')
+print(ages)
+ages.clear()
+print(ages)
