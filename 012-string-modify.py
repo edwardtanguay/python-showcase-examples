@@ -1,3 +1,6 @@
+from tools import separator, section
+
+section('general')
 name = " Nikola Tesla   "
 print(f"name: [{name}]")
 print(f"upper case: [{name.upper()}]")
@@ -9,21 +12,18 @@ print(f"split: {name.strip().split(' ')}") # single quotes
 print(f"\t1. \"{name.strip()}\"\n\t2. \"{name.strip()}\"")
 print(f"The letter a occurs {name.count('a')} times.")
 
-def separator():
-	print('---')
-
 # endswith
 if name.endswith(" "):
 	print("space at end")
 
-# find
+section('find')
 print(f"find: {name.find('Tesla')}")
 
-# join
+section('join')
 names = ["Harold", "Austin", "Georg"]
 print(f"The names of invitees are: {", ".join(names)}") # not is the opposite as in JavaScript
 
-# split
+section('split')
 url = "https://company.com/products/specials/003"
 urlParts = url.split('/')
 print(f"{urlParts} is of type {type(urlParts)}")
@@ -36,3 +36,5 @@ for urlPart in urlParts:
 	if urlPart.strip() != "":
 		print(f"{i}. {urlPart}")
 		i += 1
+
+
