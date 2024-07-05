@@ -26,3 +26,9 @@ if searchColor in colors:
 	print(f'{searchColor} is in list')
 else:
 	print(f'{searchColor} NOT in list')
+
+section('replace items')
+scores = [10,11,0,0,14]
+print(scores)
+scores[2:4] = [12,13]
+print(scores)
