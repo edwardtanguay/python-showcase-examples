@@ -23,3 +23,7 @@ section('filter')
 searchLetter = "e"
 filteredPlanets = [planet for planet in planets if searchLetter in planet.lower()]
 print(f'Planets that have "{searchLetter}" in their name: {filteredPlanets}')
+
+section('map/filter')
+booleanMapForFilteredPlanets = [True if searchLetter in planet.lower() else False for planet in planets]
+print(booleanMapForFilteredPlanets)
