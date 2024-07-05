@@ -19,3 +19,10 @@ section('range')
 print(f"items with index numbers 1-3: {colors[1:4]}") # last index number is not included
 print(f"from second to end: {colors[1:]}")
 print(f"first three: {colors[:3]}") # last index number is not included
+
+section('if included')
+searchColor = 'purple'
+if searchColor in colors:
+	print(f'{searchColor} is in list')
+else:
+	print(f'{searchColor} NOT in list')
