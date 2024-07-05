@@ -32,3 +32,9 @@ scores = [10,11,0,0,14]
 print(scores)
 scores[2:4] = [12,13]
 print(scores)
+
+section('insert')
+ages = [34,35,36,38,39]
+print(ages)
+ages.insert(3, 37)
+print(ages)
