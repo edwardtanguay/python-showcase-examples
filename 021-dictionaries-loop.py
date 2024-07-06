@@ -30,3 +30,11 @@ for key in airplane:
 section('loop through keys with index')
 for i, key in enumerate(airplane):
     print(f"{i+1}. {key}")
+
+section('loop through values')
+for value in airplane.values():
+    print(value)
+
+section('loop through keys/values')
+for k,v in airplane.items():
+    print(f"{k} --> {v}")
