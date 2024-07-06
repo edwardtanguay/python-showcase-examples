@@ -5,7 +5,7 @@ emp = {
     "first_name": "John",
     "last_name": "Doe",
     "age": 30,
-    "department": "Engineering",
+	"departments": ['sales', 'marketing'],
     "position": "Software Engineer",
     "salary": 75000,
     "email": "john.doe@example.com",
@@ -18,7 +18,6 @@ emp = {
     },
     "skills": ["Python", "JavaScript", "C++", "SQL"],
     "hire_date": "2022-01-15",
-	"departments": ['sales', 'marketing']
 }
 
 section('display information from dictionary')
@@ -30,3 +29,17 @@ print(len(emp))
 section('can have any type as property values')
 print(f"{emp['first_name']} {emp['last_name']} works in {len(emp['departments'])} departments.")
 
+section('two ways to access property values')
+print(emp['age'])
+print(emp.get('age'))
+
+section('get list of keys and values')
+print(emp.keys())
+print(emp.values())
+print(f"Employee ID is {list(emp.values())[0]}.")
+infos = [1234,'John']
+print(f"Employee ID is {infos[0]}.")
+print(type(emp.values())) # note the type is dict_values, not list
+print(type(list(emp.values())))
+print(emp.items()) # a list with tuples
+print(f"Employee ID is {list(emp.items())[0][1]}.")
