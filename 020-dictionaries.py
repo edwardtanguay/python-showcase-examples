@@ -55,3 +55,14 @@ section('change key value')
 print(f"{emp['first_name']} was {emp['age']}.")
 emp.update({'age': 40}) # note you send a dictionary as parameter
 print(f"{emp['first_name']} is now {emp['age']}.")
+
+section('add and remove key/value')
+print(f"Employee has {len(emp)} keys.")
+emp['hasBitcoinAccount'] = False
+print(f"Employee has {len(emp)} keys.")
+emp.popitem() # removes last added item
+emp.pop('departments')
+print(f"Employee has {len(emp)} keys.")
+emp.clear()
+print(f"Employee has {len(emp)} keys.")
+
