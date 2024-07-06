@@ -43,3 +43,10 @@ print(type(emp.values())) # note the type is dict_values, not list
 print(type(list(emp.values())))
 print(emp.items()) # a list with tuples
 print(f"Employee ID is {list(emp.items())[0][1]}.")
+
+section('check if key exists')
+checkKey = 'age'
+if checkKey in emp:
+	print(f'we can calculate {checkKey}')
+else:
+	print(f'key {checkKey} does not exist')
