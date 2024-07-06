@@ -13,28 +13,9 @@ class Person:
 		self.lastName = lastName
 		self.age = age
 	def display(self) -> str:
-		return f"{p.firstName} {p.lastName} is {p.age} years old."
-p = Person("Peter", "Stodio", 34)
-print(p.display())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		return f"{self.firstName} {self.lastName} is {self.age} years old."
+person = Person("Peter", "Stodio", 34)
+print(person.display())
 
 section('class with __str__')
 class Person:
@@ -43,6 +24,6 @@ class Person:
 		self.lastName = lastName
 		self.age = age
 	def __str__(self) -> str:
-		return f"{p.firstName} {p.lastName} is {p.age} years old."
+		return f"{self.firstName} {self.lastName} is {self.age} years old."
 p = Person("Peter", "Stodio", 34)
 print(p)
