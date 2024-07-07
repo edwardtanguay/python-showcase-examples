@@ -18,13 +18,13 @@ jsonPersons = '''[
         "lastName": "Jones"
     }
 ]'''
-persons = json.loads(jsonPersons) # JSON.parse(jsonPersons)
+persons = json.loads(jsonPersons) # same as: JSON.parse(jsonPersons)
 
 print(f"Type is {type(persons)} and there are {len(persons)} items.")
 for person in persons:
 	print(f"{person['firstName']} {person['lastName']} ({person['id']})")
 
-jsonText = json.dumps(persons, indent=4) # JSON.dumps(persons)
+jsonText = json.dumps(persons, indent=4) # same as: JSON.stringify(persons)
 pathAndFileName = 'output/persons.json'
 with open(pathAndFileName, 'w') as file:
 	file.write(jsonText)
